@@ -48,22 +48,22 @@ void loop()
 {
   // Set up the analog pins in preparation for reading the X value
   // from the touchscreen
-  pinMode( 15, INPUT );     // Analog pin 1
-  pinMode( 17, INPUT );     // Analog pin 3
-  pinMode( 14, OUTPUT );    // Analog pin 0
-  digitalWrite( 14, LOW );  // Use analog pin 0 as a GND connection
-  pinMode( 16, OUTPUT );    // Analog pin 2
-  digitalWrite( 16, HIGH ); // Use analog pin 2 as a +5V connection
+  pinMode( A1, INPUT );     // Analog pin 1
+  pinMode( A3, INPUT );     // Analog pin 3
+  pinMode( A0, OUTPUT );    // Analog pin 0
+  digitalWrite( A0, LOW );  // Use analog pin 0 as a GND connection
+  pinMode( A2, OUTPUT );    // Analog pin 2
+  digitalWrite( A2, HIGH ); // Use analog pin 2 as a +5V connection
   xVal = analogRead( 1 );   // Read the X value
 
   // Set up the analog pins in preparation for reading the Y value
   // from the touchscreen
-  pinMode( 14, INPUT );     // Analog pin 0
-  pinMode( 16, INPUT );     // Analog pin 2
-  pinMode( 15, OUTPUT );    // Analog pin 1
-  digitalWrite( 15, LOW );  // Use analog pin 1 as a GND connection
-  pinMode( 17, OUTPUT );    // Analog pin 3
-  digitalWrite( 17, HIGH ); // Use analog pin 3 as a +5V connection
+  pinMode( A0, INPUT );     // Analog pin 0
+  pinMode( A2, INPUT );     // Analog pin 2
+  pinMode( A1, OUTPUT );    // Analog pin 1
+  digitalWrite( A1, LOW );  // Use analog pin 1 as a GND connection
+  pinMode( A3, OUTPUT );    // Analog pin 3
+  digitalWrite( A3, HIGH ); // Use analog pin 3 as a +5V connection
   yVal = analogRead( 0 );   // Read the Y value
 
   // Report the values back to the host
