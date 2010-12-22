@@ -36,6 +36,7 @@ int yVal = 0;
  */
 void setup()
 {
+  // Note: when using the serial monitor, make sure you set the baud rate to 38400
   Serial.begin(38400);
 }
 
