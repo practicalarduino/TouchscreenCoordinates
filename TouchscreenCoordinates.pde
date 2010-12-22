@@ -48,7 +48,10 @@ void setup()
 void loop()
 {
   // Set up the analog pins in preparation for reading the X value
-  // from the touchscreen
+  // from the touchscreen.
+  // NOTE: Recent versions of Arduino include friendly names for the
+  // analog pins, so now we can refer to them using labels like "A1"
+  // when using them in digital mode.
   pinMode( A1, INPUT );     // Analog pin 1
   pinMode( A3, INPUT );     // Analog pin 3
   pinMode( A0, OUTPUT );    // Analog pin 0
